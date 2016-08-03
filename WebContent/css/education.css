@@ -1,0 +1,194 @@
+
+/*导航*/
+div.object-list ul{
+	width:210px;
+	height:456px;
+	background-color: #fff;
+	position:absolute;
+	opacity:.8;
+}
+div.object-list ul li{
+	width:260px;
+	height:60px;
+    margin-top: 20px;
+    padding-top:20px;
+    list-style: none;
+} 
+div.object-list ul li:hover{
+	background-color:#00BEB7;
+}
+div.object-list ul li:hover a,
+div.object-list ul li:hover a.stage{
+	color:#fff;
+}
+div.object-list ul li a{
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:gray;
+	text-decoration: none;
+	margin-left:5px;
+	display:inline-block;
+}
+div.object-list ul li a.object,
+div.object-list ul li a.first-a{
+	margin-left:60px;
+}
+div.object-list ul li a.stage{
+	color:black;
+	font-weight: bold;
+	font-size:14px;
+}
+div.object-list ul li.small i{
+	margin-left:20px;
+	display: inline-block;
+	width:30px;
+	height:30px;
+	position:absolute;
+	background:url("../images/6.png") no-repeat;
+	background-size:30px 30px;
+}
+div.object-list ul li.small:hover i{
+	width:30px;
+	height:30px;
+	position:absolute;
+	background:url("../images/9.png") no-repeat;
+	background-size:30px 30px;
+}
+div.object-list ul li.middle i{
+	margin-left:20px;
+	display: inline-block;
+	width:30px;
+	height:30px;
+	position:absolute;
+	background:url("../images/7.png") no-repeat;
+	background-size:30px 30px;
+}
+div.object-list ul li.middle:hover i{
+	width:30px;
+	height:30px;
+	position:absolute;
+	background:url("../images/10.png") no-repeat;
+	background-size:30px 30px;
+}
+div.object-list ul li.high i{
+	margin-left:20px;
+	display: inline-block;
+	width:30px;
+	height:30px;
+	position:absolute;
+	background:url("../images/8.png") no-repeat;
+	background-size:30px 30px;
+}
+div.object-list ul li.high:hover i{
+	width:30px;
+	height:30px;
+	position:absolute;
+	background:url("../images/11.png") no-repeat;
+	background-size:30px 30px;
+}
+
+/*内容*/
+div.object-content{
+	width:600px;
+	height:400px;
+	border:2px solid #00BEB7;
+	position:absolute;
+	background-color:#fff;
+	opacity:.8;
+	display:none;
+	box-sizing:border-box;
+	z-index:1;
+}
+/*小学*/
+div.object-content ul.small-object{
+	width:600px;
+	height:400px;
+	/*display:none;*/
+}
+div.object-content ul.small-object li{
+	list-style: none;
+	line-height: 8px;
+	/*margin-top:10px;*/
+}
+div.object-content ul.object-one li{
+	list-style: none;
+	display:inline-block;
+	width:50px;
+	text-align:center;
+    /*margin-top: 20px;*/
+    border-right:1px solid gray;
+}
+div.object-content ul.object-one li:first-child{
+	width:70px;
+/*	margin-left: 10px;	*/
+}
+div.object-content ul.object-one li:first-child a{
+	color:#00BEB7;
+}
+div.object-content ul.object-one li a{
+	text-decoration: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color:gray;
+	display: inline-block;
+}
+div.object-content ul.object-one li a:hover{
+	color:#00BEB7;
+}
+div.object-content ul.small-object li:first-child{
+	margin-top:20px;
+}
+div.object-content ul.small-object li:last-child{
+	margin-top: 20px;
+}
+
+/*初中*/
+div.object-content ul.middle-object{
+	width:600px;
+	height:400px;
+	/*display:none;*/
+}
+div.object-content ul.middle-object li{ 
+	list-style: none;
+	line-height: 8px;
+	margin-top: 20px;
+}
+div.object-content ul.middle-object li:first-child{
+	margin-top:20px;
+}
+div.object-content ul.middle-object li:last-child{
+	margin-top: 20px;
+}
+div.center-content div.object-content ul.middle-object li.middle-li-one{
+    border:0px;
+}
+div.object-content ul.middle-object li.middle-li-two{
+    border-left:1px solid gray;
+    margin-left:80px;
+    width:60px;
+}
+/*高中*/
+div.object-content ul.high-object{
+	width:600px;
+	height:400px;
+	/*display:none;*/
+}
+div.object-content ul.high-object>li{ 
+	list-style: none;
+	line-height: 8px;
+	margin-top: 20px;
+}
+div.object-content ul.high-object li:first-child{
+	margin-top:20px;
+}
+div.object-content ul.high-object li:last-child{
+	margin-top: 20px;
+}
+div.object-content ul.high-object li.high-li-one{
+    border:0px;
+}
+div.object-content ul.high-object li.high-li-two{
+    border-left:1px solid gray;
+    margin-left:80px;
+    width:60px;
+}

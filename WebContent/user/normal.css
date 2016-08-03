@@ -1,0 +1,55 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 14px/1.5;
+}
+ul,li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: middle;
+}
+body{
+	background: #fff;
+	color:#646464;
+	font:14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif; 
+	min-width: 1200px; 
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset,img{
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var{
+	font-style: normal;
+	font-weight: normal;
+}
+ol,ul,li{
+	list-style: none;
+}
+img{
+	border:none;
+}
+input{
+	vertical-align: middle;
+	line-height: normal;
+	border:none
+	outline:none;
+	list-style: none;
+}
+a{
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	color: #969696;
+}
+a:hover,a.hover{
+	color: #3cb5ae ;
+}
+textarea{
+	resize: none;
+	overflow: auto;
+}

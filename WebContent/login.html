@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="大连民族大学家教中心">
+<meta name="keywords" content="大连家教,民族家教,民大家教,好好学习家教网">
+<meta name="author" content="沈先春">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/semantic.min.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<title>好好学习家教中心</title>
+<script type="text/javascript">
+	function change(){
+			var img=document.getElementById("vc");
+			img.src="rand.action?a="+new Date().getTime();
+		}
+		 function login(){
+			 var $btn = $("input#sub");//获取按钮元素 
+			 $btn.bind("click",function(){
+	     $.ajax({
+             type:"post",
+             url:"LoginAction",//需要用来处理ajax请求的action,LoginAction为处理的方法名，JsonAction为action名 
+             data:{//设置数据源 
+            	 usertell:$("input[name=usertell]").val(), 
+            	 password:$("input[name=password]").val(),
+            	 randomNumber:$("input[name=randomNumber]").val()//这里不要加","  不然会报错，而且根本不会提示错误地方 
+             },
+           	dataType:"json",//设置需要返回的数据类型 
+            success:function(data){
+                var d = eval("("+data+")");//将数据转换成json类型，可以把data用alert()输出出来看看到底是什么样的结构 
+                //得到的d是一个形如{"key":"value","key1":"value1"}的数据类型，然后取值出来 
+                	if(d.random!=null){
+                		alert(d.random);
+                		return;
+                	}if(d.user!=null){
+                		alert(d.user);
+                		return;
+                	}if(d.url!=null){
+                		 window.open(d.url,"_parent");
+                		 return;
+                	}
+           }, 
+         error:function(){ 
+               alert("系统异常，请稍后重试！");
+             }//这里不要加"," 
+        });
+	  });
+		 }
+		 $(document).ready(function(){
+			 login();//点击提交，执行ajax 
+	        }); 
+</script>
+
+</head>
+<body scroll="auto" style="background: url(images/back1.jpg);background-size: 100% 100%;background-repeat:no-repeat;background-attachment: fixed;">
+    
+    <div id="student"><img src="images/logo.png" height="80px" width="170px"></img></div>
+	
+	<div id="login">
+   <form action="#" method="post" name="form1" style="padding-top:55px;">
+      <table class="retable" align="center"  >
+          <tr>
+           <td colspan="2"><input class="in" name="usertell" type="text"placeholder="请输入电话号码"/></td>
+         </tr>
+       <tr>
+          
+		   <td colspan="2"><input class="in" name="password" type="password" placeholder="请输入密码"/></td>
+		   
+         </tr>
+		 <tr>
+          
+		   <td><input name="randomNumber" type="text" style="width:160px; height:35px;" placeholder="请输入右侧验证码"/></td>
+		   
+		   <td>
+		    <a href="javascript:change()"><img alt="验证码" src="rand.action" id="vc" border="1px" width="85px" height="35px"></a>
+		   </td>
+         </tr>
+         <tr>
+          
+           <td colspan="2"><input id="sub" class="rebutton" type="button" value="登录" style="color:white;font-family:微软雅黑;"/></td>
+		   
+         </tr>
+         <tr>
+          
+           <td><font class="qtregisterw">其他方式登陆</font></td>
+		   <td>
+		   <div id="qtregister">
+		   <a><img src="images/qq.png" /></a>
+		   <a><img src="images/sina.png" style="padding-left:15px;"/></a>
+		   <a><img src="images/wechat.png"  style="padding-left:15px;"/></a>
+		   </div>
+		   </td>
+         </tr>
+      </table>
+   </form>
+   </div>
+</body>
+</html>

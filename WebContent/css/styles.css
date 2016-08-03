@@ -1,0 +1,82 @@
+body{
+	background: url(images/back1.jpg);
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+/*div{border:1px solid #000;}*/
+tr{
+    display:block; /*将tr设置为块体元素*/
+    margin:2px 0;  /*设置tr间距为2px*/
+}
+
+#student{
+	margin: 0 auto;
+	margin-top: 130px;
+	height:27px;
+	line-height:40px;
+	width:320px;
+	background-color:white; 
+	font-family:微软雅黑;
+	text-align:center;
+	font-size:16px;
+}
+#login{
+	margin:-35px auto;
+	height:280px;
+	width:320px;
+    background-color:white;
+}
+
+
+#register-title{
+	position:absolute;
+    top:46px;
+    left:510px;	
+}
+
+#register{
+	margin:80 auto;
+	height:320px;
+	width:320px;
+    background-color:white;	
+
+}
+
+#teacherRegister{
+	margin:80 auto;
+	height:300px;
+	width:320px;
+    background-color:white;	
+	display:none;
+}
+.retable{
+	margin-top:35px;
+}
+.in{
+    width: 250px;
+    height:35px;
+}
+.rebutton{
+	width: 250px;
+    height:35px;
+	background:rgba(50,80,106,0.8);
+
+	
+}
+.scbutton{
+	width: 90px;
+	height:35px;
+	background:rgba(50,80,106,0.8);
+
+}
+.qtregisterw{
+	height:34px;
+	line-height:34px;
+	font-family:微软雅黑;
+	text-align:center;
+}
+#qtregister{
+	
+	margin-left:30px;
+}

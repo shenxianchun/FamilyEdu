@@ -1,0 +1,382 @@
+.header{
+  background:white;
+}
+div.header ul:first-child{
+  padding-top: 15px;
+  /*margin-top:15px;*/
+  padding-bottom: 10px;
+}
+div.header ul li{
+  list-style:none;
+  display:inline-block;
+}
+div.header ul li img{
+  width:105px;
+  height:100px;
+  cursor:pointer;
+  margin-left:110px;
+}
+div.header ul:first-child li:last-child{
+  margin-left:123px;
+  position:absolute;
+  margin-top:25px;
+  width:700px;
+}
+div.header ul:first-child a{
+  display:inline-block;
+  width:100px;
+  height:38px;
+  line-height:37px;
+  text-align:center;
+  color:#fff;
+  background-color:#00BEB7;
+  text-decoration:none;
+  margin-left:-112px;
+}
+div.header ul li span{
+  font-size:18px;
+  font-family:"微软雅黑";
+}
+div.header ul li input{
+  width:500px;
+  height:42px;
+  border:2px solid #00BEB7;
+  font-size:14px;
+    padding-left:10px;
+  outline:none;
+  margin-left:10px;
+}
+div.header ul:last-child{
+  width:120px;
+  height:30px;
+  line-height:30px;
+  background-color:#00BEB7;
+  text-align:center;
+  position:absolute;
+  margin-top:-128px;
+  margin-left:1115px;
+}
+div.header ul:last-child li a{
+  font-size:16px;
+  font-family:"微软雅黑";
+  text-decoration: none;
+  color:#fff;
+}
+/*中间内容*/
+div.center-content>ul{
+    width:1366px;
+    background-color:#00BEB7;
+    /*margin-top:10px;*/
+}
+div.center-content>ul li{
+     list-style: none;
+     display:inline-block;
+     margin-left:20px;
+}
+div.center-content>ul li:first-child{
+  margin-left:70px;
+  width:260px;
+  box-shadow:0px 0px 2px 1px #8B8686;
+  text-align:center;
+}
+div.center-content>ul li a{
+  text-decoration:none;
+  font-size:16px;
+  font-family:"微软雅黑";
+  color:#fff;
+  display: inline-block;
+  width:120px;
+  height:55px;
+  line-height:57px;
+  text-align:center;
+}
+div.center-content>ul li:first-child a:hover{
+  background-color:#00BEB7;
+}
+div.center-content>ul li a:hover{
+  background-color:#00B4AE;
+}
+.main{
+  width:100%;
+  height:auto;
+  position: relative;
+}
+.mid{
+  width:100%;
+  height:280px;
+  background:white;
+  position: absolute;
+  border-bottom:1px solid #E5E5E5;
+}
+.mid1{
+  width:15%;
+  height:250px;
+  position: absolute;
+  top:20px;
+  left:100px;
+}
+.mid1 h5{
+  width:100%;
+  height:20px;
+  position: absolute;
+  text-align: center;
+  bottom:5px;
+}
+.mid2{
+  width:42%;
+  height:200px;
+  position: absolute;
+  top:20px;
+  left:330px;
+}
+.info{
+  width:100%;
+  height:70px;
+  position: absolute;
+  top:20px;
+  left:30px;
+  font:16px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+  color:#646464;
+}
+.info label{
+  font:26px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+}
+.info span{
+  margin-right: 20px;
+}
+.data{
+  width:100%;
+  height:80px;
+  position: absolute;
+  top:110px;
+  left:30px;
+  
+  border-top:1px solid #E5E5E5;
+}
+.data div{
+  width:19%;
+  height:80px;
+  color:#646464;
+  float:left;
+  border-right:1px solid #E5E5E5;
+  text-align: center;
+  vertical-align: middle;
+}
+.tata div h5,h4{
+  padding-top: 16px;
+}
+.data .rig{
+  border-right:none;
+}
+.mid3{
+  width:28%;
+  height:200px;
+  position: absolute;
+  top:20px;
+  left:980px;
+}
+.foott{
+  width:88%;
+  height:500px;
+  position: absolute;
+  top:310px;
+  left:80px;
+}
+.foott .nav a{
+  text-decoration: none;
+  float:left;
+  color:;
+  width:130px;
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  color:#969696;
+  font-weight: bold;
+  border-right:1px solid #DDDDDD;
+}
+#teacher-credit1{
+  border-right:none;
+}
+.foott .nav{
+   border-bottom:1px solid #DDDDDD;
+   width:100%;
+   height:50px;
+   background: #F8F8F8;
+}
+.left{
+  position: absolute;
+  background: white;
+  width:67%;
+  height:818px;
+   border:1px solid #DDDDDD;
+}
+.right1{
+  width:30%;
+  height:300px;
+  position: absolute;
+  background: white;
+  border:1px solid #DDDDDD;
+  right:0px;
+}
+.header1{
+  border-bottom:1px solid #DDDDDD;
+   width:100%;
+   height:50px;
+   background: #F8F8F8;
+   line-height: 50px;
+   text-align: center;
+  color:#969696;
+   font-weight: bold;
+}
+.right1 img{
+  width:100%;
+}
+#teacher-info,#teacher-past,#teacher-success,#teacher-list,#teacher-credit{
+  width:90%;
+  height:200px;
+  position: absolute;
+  border-bottom:1px solid #DDDDDD;
+}
+#teacher-past{
+  top: 250px;
+}
+#teacher-success{
+  top: 450px;
+}
+#teacher-list{
+  top: 650px;
+}
+#teacher-credit{
+  top: 850px;
+}
+.right2,.right3{
+  width:30%;
+  height:300px;
+  position: absolute;
+  background: white;
+  border:1px solid #DDDDDD;
+  right:0px;
+  color:#646464;
+
+}
+.right2{
+  top:350px;
+}
+.right3{
+  top:700px;
+}
+#teacher-past ul{
+  margin-top: 20px;
+  margin-left: 50px;
+  list-style: none;
+  height:35px;
+  line-height: 35px;
+  font-weight: "微软雅黑";
+  font-size: 14px;
+  color:#646464;
+}
+.content3{
+  margin-top: 20px;
+}
+.content3 label{
+  padding:10px 20px;
+  line-height: 35px;
+  cursor: pointer;
+  font-weight: "微软雅黑";
+  font-size: 14px;
+  margin-left: 30px;
+}
+.info1{
+  margin-top: 20px;
+  float: left;
+  color:#646464;
+  list-style: none;
+}
+.info2{
+  margin-top: 20px;
+  list-style: none;
+  float: left;
+  font-weight: "微软雅黑";
+  font-size: 14px;
+  margin-left: 150px;
+  color:#646464;
+
+}
+.info1 li,.info2 li{
+    line-height: 35px;
+    height:35px;
+    font-weight: "微软雅黑";
+  margin-left: 50px;
+  font-size: 14px;
+}
+.success1,.success2,.success3{
+  margin-top: 20px;
+  float: left;
+  list-style: none;
+   font-weight: "微软雅黑";
+  font-size: 14px;
+  margin-left: 50px;
+  color:#646464;
+}
+.success2,.success3{
+  margin-left: 130px;
+}
+.success1 li,.success2 li,.success3 li{
+    line-height: 35px;
+    height:35px;
+}
+.list1,.list2{
+  margin-top: 20px;
+  float: left;
+  list-style: none;
+   font-weight: "微软雅黑";
+  font-size: 14px;
+  margin-left: 50px;
+  color:#646464;
+}
+.list2{
+  margin-left: 150px;
+}
+.list1 li,.list2 li{
+    line-height: 35px;
+    height:35px;
+}
+#teacher-credit{
+  padding-top:40px;
+  padding-left: 50px;
+  font-weight: "微软雅黑";
+  color:#646464;
+  font-size: 14px;
+}
+#teacher-credit p{
+  width:700px;
+  line-height: 35px;
+  height:35px;
+}
+#teacher-credit img{
+  margin-top: 50px;
+}
+#bottomt{
+	margin-top:1300px;
+}
+#teacher-success ul{
+  margin-top: 20px;
+  margin-left: 50px;
+  list-style: none;
+  height:35px;
+  line-height: 35px;
+  font-weight: "微软雅黑";
+  font-size: 14px;
+  color:#646464;
+}
+
+#teacher-list ul{
+  margin-top: 20px;
+  margin-left: 50px;
+  list-style: none;
+  height:35px;
+  line-height: 35px;
+  font-weight: "微软雅黑";
+  font-size: 14px;
+  color:#646464;
+}

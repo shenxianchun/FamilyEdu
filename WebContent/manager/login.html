@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="大连民族大学家教中心">
+<meta name="keywords" content="大连家教,民族家教,民大家教,易教网">
+<meta name="author" content="沈先春">
+<link rel="stylesheet" href="../css/animate.css">
+<link rel="stylesheet" href="../css/semantic.min.css" />
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<title>易教网登陆管理中心</title>
+<script type="text/javascript">
+	function change(){
+		var img=document.getElementById("vc");
+		img.src="rand.action?a="+new Date().getTime();
+	}
+	function login(){
+		 var $btn = $("input#sub");//获取按钮元素 
+		 $btn.bind("click",function(){
+    $.ajax({
+        type:"post",
+        url:"LoginAction",//需要用来处理ajax请求的action,LoginAction为处理的方法名，JsonAction为action名 
+        data:{//设置数据源 
+       	 usertell:$("input[name=usertell]").val(), 
+       	 password:$("input[name=password]").val(),
+       	 randomNumber:$("input[name=randomNumber]").val()//这里不要加","  不然会报错，而且根本不会提示错误地方 
+        },
+      	dataType:"json",//设置需要返回的数据类型 
+       success:function(data){
+           var d = eval("("+data+")");//将数据转换成json类型，可以把data用alert()输出出来看看到底是什么样的结构 
+           //得到的d是一个形如{"key":"value","key1":"value1"}的数据类型，然后取值出来 
+           if(d.random!=null){
+           		alert(d.random);
+           		return;
+           	}if(d.user!=null){
+           		alert(d.user);
+           		return;
+           	}if(d.url!=null){
+           		 window.open("TpageAction?pageNow=1","_parent");
+           		 return;
+           	}
+      }, 
+    error:function(){ 
+          alert("系统异常，请稍后重试！");
+        }//这里不要加"," 
+   });
+ });
+	 }
+	 $(document).ready(function(){
+		 login();//点击提交，执行ajax 
+       }); 
+</script>
+<style type="text/css">
+	body{margin:0;padding:0;background-color:#00beb7;color:#646464;font-family: "微软雅黑";}
+	.title{
+		height:50px;
+		margin:0 auto;
+		margin-top:100px;
+		text-align:center;
+		font-size:30px;
+		color:#fff;
+		line-height:50px;
+	}
+	.main{
+		width:500px;
+		height:400px;
+		background:#bfefed;
+		margin:0 auto;
+		margin-top:10px;
+		padding-top:50px;
+		text-align:center;
+	}
+	.in{
+		width:300px;
+	}
+	.sub{
+		width:100px;
+	}
+	.registered{
+		width:500px;
+		height:400px;
+		background:#bfefed;
+		margin:0 auto;
+		display:none;
+	}
+	.r_top{
+		width:500px;
+		height:50px;
+	}
+	.parent, .teach{
+		width:250px;
+		height:50px;
+		border:1px solid #555;
+		text-align:center;
+		line-height:50px;
+		font-size:16px;
+		color:white;
+		background:#32b16c;
+		float:left;
+		border-bottom:none;
+		cursor:pointer;
+	}
+	.teach{
+		border-left:none;
+	}
+	.form{
+		width:500px;
+		height:350px;
+		border:1px dotted #555;
+	}
+</style>
+</head>
+<body>
+	<div class="title">大连民族大学家教</div>
+	<div class="main">
+		<div class="l_count">
+			<button class="ui blue button" id="ub">欢迎来到易教管理登陆中心</button><br/><br/>
+			<form form action="#" method="post" name="form1">
+				<div class="ui input">
+				  <input type="text" placeholder="请输账号" class="in" name="usertell">
+				</div><br/><br/>
+				<div class="ui input">
+				  <input type="password" placeholder="密码" class="in" name="password">
+				</div>
+				<br/><br/>
+				<div class="ui input">
+				  <input type="text" placeholder="验证码" class="in" name="randomNumber" style="width:215px;">
+				  <a href="javascript:change()"><img alt="验证码" src="rand.action" id="vc" border="1px" width="85px" height="35px"></a>
+				</div>
+				<br/><br/>
+				<div class="ui buttons">
+				  <input type="button" class="sub ui red button" id="sub" value="登陆">
+				  <div class="or"></div>
+				  <input type="reset" class="sub ui positive button" value="重置">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

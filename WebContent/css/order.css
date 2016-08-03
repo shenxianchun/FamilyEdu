@@ -1,0 +1,297 @@
+﻿*{margin: 0;padding: 0;}
+ /*div{border:1px solid #000;}*/
+
+body{
+    background: #D5F7FC;
+    /* background: URL(../image/14.jpg);*/
+    font-family:"微软雅黑";
+    background-position:top center;
+}
+#gg{
+    top: 280px;
+    right:0px; 
+    z-index: 100;
+    position: absolute;
+    word-break: keep-all;
+    display:none;
+}
+#top{
+    width:100%;
+    height:32px;
+    background-image:-webkit-gradient(linear,left bottom,left top,from(#00FFD6),to(#003DFF));
+    top:0px;
+    display:block;
+    z-index: 100;
+    position: absolute;
+}
+#nav{	/*导航*/
+    width: 88%;
+    margin: 49px auto;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #009ACD;
+}
+
+#nav a{
+    display: block;
+    width: 14.28%;
+    height: 46px;
+    line-height: 46px;
+    float: left;
+    border-bottom: 4px solid #6EE7A8;
+    text-align: center;
+    text-decoration: none;
+    font-weight:500;
+    color:#49CF0B;
+}
+#nav a:first-child{
+    border-radius: 0 0 0 8px;
+}
+#nav a:last-child{
+    border-radius: 0 0 8px 0;
+}
+#nav a:hover{
+    border-bottom: 4px solid #4F94CD;
+    color: #4F94CD;
+}
+#nav a:first-child:hover{
+    border-bottom: 4px solid #4F94CD;
+    border-radius: 0 0 0 8px;
+}
+#nav a:last-child:hover{
+    border-bottom: 4px solid #4F94CD;
+}
+
+#top #topd{	/*登陆*/
+    width:100px;
+    height:29px;
+    display:block;
+    margin-left:1141px;
+    text-align:center;
+    line-height:32px;
+    text-decoration:none;
+    font-size:15px;
+    color:green;
+    font-weight:bold
+}
+#top #topz{	/*注册*/
+    width:62px;
+    height:29px;
+    display:block;
+    margin-left:1230px;
+    margin-top:-28px;
+    text-align:center;
+    line-height:30px;
+    text-decoration:none;
+    font-size:15px;
+    color:green;
+    font-weight:bold
+}
+.cen{
+    width:87%;
+    height:1800px;
+    margin: 0 auto;
+  
+}
+
+.cen .order_top{
+	width:95%;
+	height:8%;
+    margin: 0 auto;
+    border-bottom:1px solid #e5e5e5;
+    line-height:130px;
+    color:grey;
+	
+}
+
+.cen .infor{
+	
+	width:30%;
+	height:27%;
+	margin-left:150px;
+	margin-top:50px;
+	
+	
+}
+
+.cen .jianjie{
+	position: absolute;
+	top:300px;
+	left:600px;
+}
+
+.cen .infor .teacher_name{
+	font-family:"微软雅黑";
+	font-size:20px;
+	width:80%;
+	height:40%;
+	float:left;
+	display:inline;
+
+}
+.cen .infor .infor_b{
+	font-family:"微软雅黑";
+	font-size:20px;
+	width:100%;
+	height:60%;
+	float:left;
+	display:block;
+}
+
+.cen .time{
+	width:80%;
+	height:110px;
+	/*background-color:grey;*/
+	margin: 0 auto;
+	margin-top:30px;
+	}
+
+.cen .time .li{
+ float: left;
+  width: 225px;
+  border: 1px solid #c8c8c8;
+  margin: 8px;
+  padding: 5px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  background-color:#ebebeb
+	}
+	
+.ok{
+	width:30px;
+	height:25px;
+	background-color:orange;
+	float:right;
+	margin-top:-27px;
+	text-align:center;
+	margin-right:-6px;
+	display:none;
+	
+}
+
+.cen .o_bottom{
+	
+	width:100%;
+	height:200px;
+	background-color:white;
+}
+.xia{
+	width:100px;height:40px;background-color:#436EEE;margin-top:50px;
+	margin-left:450px;
+	font-size:15px;
+	color:white;
+	font-family:"微软雅黑";
+}
+
+.reset{
+	width:100px;height:40px;background-color:#436EEE;margin-top:50px;
+	margin-left:5px;
+	font-size:15px;
+	color:white;
+	font-family:"微软雅黑";
+}
+
+#order{
+	width: 88%;
+	background-color:white;
+    margin: 0 auto;
+	margin-top:-10px;
+    height: 1100px;
+}
+#order_up{
+	background-color:white;
+	width: 100%;
+    height: 350px;
+}
+#order_moddle{
+	background-color:white;
+	width: 100%;
+    height: 200px;
+}
+#order_down{
+	background-color:white;
+	width: 100%;
+    height: 400px;
+}
+#teacher_img{
+    width: 96px;
+    height: 96px;
+	margin-top:20px;
+	margin-left:120px;
+	float:left;
+}
+#teacher_name{
+	width: 1000px;
+    height: 142px;
+	margin-left:80px;
+	float:left;
+}
+#teacher_style{
+	width: 300px;
+    height: 100px;
+}
+.p_1{
+	font-family:"微软雅黑";
+	font-size:20px;
+	padding-top:20px;
+	margin-left:50px;
+}
+.p_2{
+	font-family:"微软雅黑";
+	font-size:14px;
+	margin-top:25px;
+	margin-left:50px;
+}
+.p_3{
+	font-family:"微软雅黑";
+	font-size:14px;
+	margin-top:25px;
+	margin-left:50px;
+}
+.p_4{
+	color:red;
+}
+.span_1{
+	font-family:"微软雅黑";
+	font-size:23px;
+	color:#FF8000;
+	margin-top:80px;
+	
+}
+.span_2{
+	font-family:"微软雅黑";
+	font-size:14px;
+	margin-top:30px;
+	
+}
+.hr_style{
+	margin-top:10px;
+}
+.select_1{
+	width: 240px;
+    height: 30px;
+	margin-top:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

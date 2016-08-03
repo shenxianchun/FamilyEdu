@@ -1,0 +1,136 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>好好学习注册</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  
+<body style="background: url(images/back1.jpg);background-size: 100% 100%;background-repeat:no-repeat;background-attachment: fixed;">
+  
+  
+  
+  
+   <div id="register">
+   <form  action="RegisterAction" name="form1" method="post">
+      <table class="retable" align="center"  style="padding-top:15px;">
+         <tr>
+          
+           <td colspan="2"><input id="usertell" class="in" name="usertell" type="text" placeholder="请输入电话号码" onblur="checkPhone()"/></td>
+       
+         </tr>
+          <tr>
+           
+           <td colspan="2">
+              <input id="password" class="in" name="password" type="password" placeholder="请输入密码" onblur="checkPassword()"/>
+           </td>
+       
+         </tr>
+       <tr>
+          
+       <td colspan="2">
+        <input class="in" name="spassword" type="password" placeholder="确认密码"/>
+       </td>
+         </tr>
+     <tr>
+          
+       <td>
+          <select class="in" name="role" id="role">
+                   <option value ="教员">教员注册</option>
+                   <option value ="学员">学员注册</option>
+          </select>
+      </td>
+       
+         </tr>
+     <tr>
+          
+       <td><input id="acode" name="acode" type="text" style="width:160px; height:35px;" placeholder="请输入验证码" onblur="checkAcode()"/></td>
+       
+       <td> 
+        <a href="javascript:send()"><input name="scbutton" class="scbutton" type="button" style="width:85px; height:35px; color:white;font-family:微软雅黑;" value="获取验证码"/></a>
+       </td>
+         </tr>
+         
+         
+        <tr>
+          
+           <td colspan="2" style="font-size:12px;font-family:微软雅黑;"><input name="ok" type="checkbox" checked style="margin-top:5px;" />我已阅读并同意相关服务条款和隐私政策</td>
+       
+         </tr>
+     <tr>
+          
+           <td colspan="2"><input name="rebutton" class="rebutton" type="button" value="注册" onclick="regester()" style="color:white;font-family:微软雅黑;"/></td>
+       
+         </tr>
+      </table>
+   </form>
+   </div>
+   
+   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+   <script type="text/javascript">
+	var mobilecode="";
+	function send(){
+	     var usertell=$("input[name=usertell]").val();
+	     var password=$("input[name=password]").val();
+	     var spassword=$("input[name=spassword]").val();
+	    
+	    alert(usertell);
+	     if(usertell==""){
+	       alert("请输入手机号!");
+	       return;
+	     }
+	     
+	     if(password==""){
+	    	 alert("请输入密码!");
+		     return;
+	     }if(spassword==""){
+	    	 alert("请输入确认密码!");
+		     return;
+	     }if(password!=spassword){
+	    	 alert("密码不一致");
+	    	 return;
+	     }
+	     $.ajax({
+	    	 type:"post",
+             url:"SendAction",//需要用来处理ajax请求的action,LoginAction为处理的方法名，JsonAction为action名 
+             data:{//设置数据源
+            	 role:$("#role").val(),
+            	 usertell:$("input[name=usertell]").val(), 
+            	 password:$("input[name=password]").val()
+             },
+           	dataType:"json",//设置需要返回的数据类型 
+            success:function(data){
+            	alert(data);
+                var d = eval("("+data+")");//将数据转换成json类型，可以把data用alert()输出出来看看到底是什么样的结构 
+                //得到的d是一个形如{"key":"value","key1":"value1"}的数据类型，然后取值出来 
+                if(d.user!="false"){
+                	alert("验证码已发送到手机");
+                	alert(d.mobile_code);
+                	//$("input[name=rebutton]").attr("disabled","false");
+                	//$("input[name=scbutton]").attr("disabled","false");
+                	mobilecode=d.mobile_code;
+                }else{
+                	alert("手机号已被注册");
+                }
+           }, 
+         error:function(){ 
+               alert("系统异常，请稍后重试！");
+             }//这里不要加"," 
+	     });
+	  }
+	function regester(){
+		  var mbcode=mobilecode;
+		  var code=$("input[name=acode]").val();
+		  if(code==""){
+			  alert("请输入收到的验证码");
+			  return false;
+		  }
+		  if(mbcode!=code){
+			  alert("验证码错误！");
+			  return false;
+		  }
+		  document.form1.submit();
+	}
+	</script>
+  </body>
+</html>
