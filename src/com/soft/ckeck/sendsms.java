@@ -31,7 +31,7 @@ public class sendsms {
 
 		NameValuePair[] data = {//提交短信
 			    new NameValuePair("account", "cf_DLmzxx"),//注册平台账号http://sms.ihuyi.com/recharge.html
-			    new NameValuePair("password", "323556sxc"), //密码可以使用明文密码或使用32位MD5加密
+			    new NameValuePair("password", "323556"), //网站原密码是：323556sxc 密码可以使用明文密码或使用32位MD5加密
 			    // new NameValuePair("password", StringUtil.MD5Encode("323556sxc")),//密码MD5加密方式发送
 			    new NameValuePair("mobile", tell),//需要验证的手机号
 			    new NameValuePair("content", content),//向验证手机发送的内容

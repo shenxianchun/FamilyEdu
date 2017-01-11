@@ -10,6 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<base href="<%=basePath%>">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>学员需求</title>
+	<link rel="short icon" href="images/logo.png" />
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -54,12 +55,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <%} %>
 <!--nav-->
 <div id="nav">
-    <a href="index.jsp" onclick="dh(this)">网站首页</a>
-    <a href="StudentpageAction?pageNow=1">家教信息库</a>
-    <a href="TpageAction?pageNow=1">教员简历</a>
+    <a href="index.jsp" onclick="dh(this)">易教首页</a>
+    <a href="StudentpageAction?pageNow=1">学员需求</a>
+    <a href="TpageAction?pageNow=1">找教员</a>
     <a href="javascript:;" onclick="dh(this)">平台介绍</a>
-    <a href="javascript:;" onclick="dh(this)">在线学习</a>
-    <a href="javascript:;" onclick="dh(this)">学习资源</a>
+    <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
+    <a href="javascript:;" onclick="dh(this)">关于我们</a>
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
     <div class="cen" >
@@ -142,7 +143,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div id="gotop" style="width: 60px; height: 51px;"></div>
   
    <!-- 底部开始 -->
-    <div class="bottom">
+    <div class="bottom" style="margin-top:100px;">
     	<ul class="bottom-left">
     		<li>
     			<ul>
@@ -185,7 +186,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	</ul>
     	<p>Copyright ©2014-2016 好好学习网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
     </div><!-- 底部结束 -->
-  
+  	
   
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/semantic.min.js"></script>

@@ -156,13 +156,13 @@ function update(){
     <%} %>
 <!--nav-->
 <div id="nav">
-    <a href="index.jsp" onclick="dh(this)">网站首页</a>
-    <a href="StudentpageAction?pageNow=1">家教信息库</a>
-    <a href="TpageAction?pageNow=1">教员简历</a>
+    <a href="index.jsp" onclick="dh(this)">易教首页</a>
+    <a href="StudentpageAction?pageNow=1">学员需求</a>
+    <a href="TpageAction?pageNow=1">找教员</a>
     <a href="javascript:;" onclick="dh(this)">平台介绍</a>
-    <a href="javascript:;" onclick="dh(this)">在线学习</a>
-    <a href="javascript:;" onclick="dh(this)">学习资源</a>
-    <a href="javascript:;" onclick="dh(this)">反馈</a>
+    <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
+    <a href="javascript:;" onclick="dh(this)">关于我们</a>
+    <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
 
     <div id="order" class="cen">

@@ -9,7 +9,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
   <base href="<%=basePath%>">
-    <title>学员个人主页</title>
+    <title>易教学员个人主页</title>
+    <link rel="short icon" href="images/logo.png" />
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -49,12 +50,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <%} %>
 <!--nav-->
 <div id="nav">
-    <a href="index.jsp" onclick="dh(this)">网站首页</a>
-    <a href="StudentpageAction?pageNow=1">家教信息库</a>
-    <a href="TpageAction?pageNow=1">教员简历</a>
+    <a href="index.jsp" onclick="dh(this)">易教首页</a>
+    <a href="StudentpageAction?pageNow=1">学员需求</a>
+    <a href="TpageAction?pageNow=1">找教员</a>
     <a href="javascript:;" onclick="dh(this)">平台介绍</a>
-    <a href="javascript:;" onclick="dh(this)">在线学习</a>
-    <a href="javascript:;" onclick="dh(this)">学习资源</a>
+    <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
+    <a href="javascript:;" onclick="dh(this)">关于我们</a>
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
 	      <%
@@ -120,7 +121,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<ul class="bottom-left">
     		<li>
     			<ul>
-    				<li class="titles">好好学习网</li>
+    				<li class="titles">易教网</li>
     				<li><a href="#"></a></li>
     				<li><a href="#"></a></li>
     				<li><a href="#"></a></li>
@@ -157,7 +158,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		<li>周一至周日 9:00-23:00</li>
     		<li>（仅收市话费）</li>
     	</ul>
-    	<p>Copyright ©2014-2016 好好学习网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
+    	<p>Copyright ©2014-2016  民大易教家教网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
     </div><!-- 底部结束 -->
   
   

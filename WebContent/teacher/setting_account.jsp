@@ -129,7 +129,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   
   <div class="teacher_right">
-    <div class="right_thinks">感谢您入驻好好学习家教平台,请完善您的基本资料</div>
+    <div class="right_thinks">感谢您入驻易教网家教平台,请完善您的基本资料</div>
     <div class="right_count"><p style="text-indent:2em;">您完善全部资料后我们将在24小时内进行审核，并与您联系，在通过审核之前，家长不能在网站上看到你，所以无法向你约课。</p>
     </div>
     <div class="right_ul">

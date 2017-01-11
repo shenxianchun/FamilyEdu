@@ -48,12 +48,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <%} %>
 <!--nav-->
 <div id="nav">
-    <a href="index.jsp" onclick="dh(this)">网站首页</a>
-    <a href="StudentpageAction?pageNow=1">家教信息库</a>
-    <a href="TpageAction?pageNow=1">教员简历</a>
-    <a href="javascript:;">平台介绍</a>
-    <a href="javascript:;">在线学习</a>
-    <a href="javascript:;">学习资源</a>
+    <a href="index.jsp" onclick="dh(this)">易教首页</a>
+    <a href="StudentpageAction?pageNow=1">学员需求</a>
+    <a href="TpageAction?pageNow=1">找教员</a>
+    <a href="javascript:;" onclick="dh(this)">平台介绍</a>
+    <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
+    <a href="javascript:;" onclick="dh(this)">关于我们</a>
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
     <div class="cen" >
@@ -81,7 +81,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 %>
                     <div class="list animated bounceIn">
                         <div class="icon">
-                            <img src="http://localhost:8080/FamilyEdu/image/<%=fb.getTell()%>h.jpg"alt="用户头像" width="66px" height="66px"/>
+                            <img src="http://www.yjfamily.xyz/FamilyEdu/image/<%=fb.getTell()%>h.jpg"alt="用户头像" width="66px" height="66px"/>
                         </div>
                         <div class="sj"></div>
                         <div class="mes">
@@ -136,7 +136,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<ul class="bottom-left">
     		<li>
     			<ul>
-    				<li class="titles">好好学习网</li>
+    				<li class="titles">易教家教网</li>
     				<li><a href="#"></a></li>
     				<li><a href="#"></a></li>
     				<li><a href="#"></a></li>
@@ -173,7 +173,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		<li>周一至周日 9:00-23:00</li>
     		<li>（仅收市话费）</li>
     	</ul>
-    	<p>Copyright ©2014-2016 好好学习网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
+    	<p>Copyright ©2014-2016  易教家教网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
     </div><!-- 底部结束 -->
   
   

@@ -20,7 +20,7 @@ public class ArticleFamily {
 		urls.put("shige", "http://www.sanwen.net/shige/");//诗歌
 		urls.put("zawen", "http://www.sanwen.net/zawen/");//杂文
 		urls.put("novel", "www.sanwen.net/novel/");//小小说
-		urls.put("rizhi", "www.sanwen.net/rizhi/");//日记
+		//urls.put("rizhi", "www.sanwen.net/rizhi/");//日记
 		urls.put("suibi", "www.sanwen.net/suibi/");//随笔
 	}
 	public static void main(String[] args) throws MalformedURLException, IOException {
@@ -29,7 +29,7 @@ public class ArticleFamily {
 		ArrayList list=al.getContentList(urls.get("sanwen"));
 		for(int i=0;i<list.size();i++){
 			ArticleBean bean=(ArticleBean)list.get(i);
-			System.out.println(bean.getTitle()+bean.getAuthor());
+			System.out.println(bean.getTitle()+"------"+bean.getAuthor()+"========="+bean.getContent());
 		}
 		System.out.println(list.toString());
 	}
@@ -51,9 +51,11 @@ public class ArticleFamily {
 			bean.setContent(content);
 		}
 		catch (IOException e) {
-			System.out.println("文章内容网络异常！！！");
-			// TODO Auto-generated catch block
+			System.out.println("文章内容网络异常！！！-----------------------");
 			e.printStackTrace();
+			bean.setFlag("flag");
+			return bean;
+			// TODO Auto-generated catch block
 		}
 		return bean;
 	}

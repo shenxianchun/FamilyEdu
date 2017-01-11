@@ -196,6 +196,7 @@
       		<result  name="success">/manager/order.jsp</result>
 		</action>
 		<!-- 订单管理  end -->
+		
 		<!-- 反馈 start -->
 		<action name="FeedbackAction" class="com.soft.web.FeedbackAction">
       		<result name="success">/manager/feedback.jsp</result>

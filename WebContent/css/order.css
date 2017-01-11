@@ -2,8 +2,8 @@
  /*div{border:1px solid #000;}*/
 
 body{
-    background: #D5F7FC;
-    /* background: URL(../image/14.jpg);*/
+    /* background: #D5F7FC;*/
+    background: URL(../image/14.jpg);
     font-family:"微软雅黑";
     background-position:top center;
 }

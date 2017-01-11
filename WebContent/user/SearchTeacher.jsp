@@ -9,6 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
   	<base href="<%=basePath%>">
     <title>全部家教</title>
+    <link rel="short icon" href="images/logo.png" />
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -53,12 +54,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <%} %>
 <!--nav-->
 <div id="nav">
-    <a href="index.jsp" onclick="dh(this)">网站首页</a>
-    <a href="StudentpageAction?pageNow=1">家教信息库</a>
-    <a href="TpageAction?pageNow=1">教员简历</a>
+    <a href="index.jsp" onclick="dh(this)">易教首页</a>
+    <a href="StudentpageAction?pageNow=1">学员需求</a>
+    <a href="TpageAction?pageNow=1">找教员</a>
     <a href="javascript:;" onclick="dh(this)">平台介绍</a>
-    <a href="javascript:;" onclick="dh(this)">在线学习</a>
-    <a href="javascript:;" onclick="dh(this)">学习资源</a>
+    <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
+    <a href="javascript:;" onclick="dh(this)">关于我们</a>
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
 	<div class="search" style="width:87%;height:60px;margin:-13px auto 13px auto;">
@@ -153,7 +154,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								</div>
 							</dt>
 							<dd>
-								<a id="name" href="TeacherAction!TeacherInfo?tell=<%=tb.getTell() %>"><%=tb.getT_name() %></a>
+								<a id="name" href="TeacherAction!TeacherInfo?u_id=<%=tb.getU_id() %>"><%=tb.getT_name() %></a>
 								<img src="user/img/good.png" alt="">
 								<div>
 									<span class="str1">性别：</span>
@@ -171,7 +172,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<%}else{ %>
 									<%=tb.getIntroduce()%>
 									<%} %>
-									<a href="TeacherAction!TeacherInfo?tell=<%=tb.getTell() %>">[更多]</a></span>
+									<a href="TeacherAction!TeacherInfo?u_id=<%=tb.getU_id() %>">[更多]</a></span>
 								</div>
 							</dd>
 						</dl>
@@ -184,6 +185,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</ul>			
 			</div>
  	</div>
+ 	
   <!-- 回到顶部 -->
   <div id="gotop" style="width: 60px; height: 51px;"></div>
  

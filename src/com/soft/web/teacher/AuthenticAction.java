@@ -76,7 +76,7 @@ public String head() throws IOException{
 		File destFile=new File(path, headimgFileName);
 		FileUtils.copyFile(headimg, destFile);
 		
-		String insertpath="http://localhost:8080/FamilyEdu/image/"+headimgFileName;
+		String insertpath="http://www.yjfamily.xyz/FamilyEdu/image/"+headimgFileName;
 		list.set(0, insertpath);
 		boolean tt=tb.Updateimg(insertpath, tell);
 		if(tt){
@@ -128,7 +128,7 @@ public String head() throws IOException{
 			File destFile=new File(path, pidimgFileName);
 			FileUtils.copyFile(pidimg, destFile);
 			
-			String insertpath="http://localhost:8080/FamilyEdu/imageP/"+pidimgFileName;
+			String insertpath="http://www.yjfamily.xyz/FamilyEdu/imageP/"+pidimgFileName;
 			list.set(1, insertpath);
 			boolean tt=tb.UpdatePidimg(insertpath, tell);
 			if(tt){
@@ -178,7 +178,7 @@ public String head() throws IOException{
 			
 			File destFile=new File(path, eduimgFileName);
 			FileUtils.copyFile(eduimg, destFile);
-			String insertpath="http://localhost:8080/FamilyEdu/imageE/"+eduimgFileName;
+			String insertpath="http://www.yjfamily.xyz/FamilyEdu/imageE/"+eduimgFileName;
 			list.set(2, insertpath);
 			boolean tt=tb.UpdatEdueimg(insertpath, tell);
 			if(tt){

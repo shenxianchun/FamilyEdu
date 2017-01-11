@@ -9,7 +9,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    <title>好好学习首页</title>
+    <title>民大易教网首页</title>
+    <link rel="short icon" href="images/logo.png" />
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -104,13 +105,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <%} %>
 <!--nav-->
 <div id="nav">
-    <a href="index.jsp" onclick="dh(this)">网站首页</a>
+    <a href="index.jsp" onclick="dh(this)">易教首页</a>
     <a href="StudentpageAction?pageNow=1">学员需求</a>
     <a href="TpageAction?pageNow=1">找教员</a>
     <a href="javascript:;" onclick="dh(this)">平台介绍</a>
     <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
     <a href="javascript:;" onclick="dh(this)">关于我们</a>
-    <a href="javascript:;" onclick="dh(this)">反馈</a>
+    <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
     <div class="cen" >
        <div class="d_center1">
@@ -132,16 +133,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="image"><a href="#"><img src="photos/2.jpg" alt="photo 2" width="1170" height="310" /></a></div>
 					<div class="data">
 						<h4><a href="#">幸福</a></h4>
-						<p>指一个人的需求得到满足而产生长久的喜悦，并希望一直保持现状的心理情绪</p>
-
+						<p>勇敢地追求自己想要的幸福</p>
 					</div>
 				</div>
 								
 				<div class="slideshow_item">
 					<div class="image"><a href="#"><img src="photos/3.jpg" alt="photo 3" width="1170" height="310" /></a></div>
 					<div class="data">
-						<h4><a href="#">遇见你</a></h4>
-						<p>如果我生命中只有一个花期，我不敢渴望永远和你在一起。</p>
+						<h4><a href="#">遇见易教</a></h4>
+						<p>带上一颗纯洁、质朴与希望的心伴你左右</p>
 					</div>
 
 				</div>
@@ -150,7 +150,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="image"><a href="#"><img src="photos/1.jpg" alt="photo 1" width="1170" height="310" /></a></div>
 					<div class="data">
 						<h4><a href="#">REIDA</a></h4>
-						<p>时间联系生活</p>
+						<p>时间在哪，我在哪，勇敢、坚韧、充满希望</p>
 					</div>
 				</div>
 
@@ -158,8 +158,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="slideshow_item">
 					<div class="image"><a href="#"><img src="photos/4.jpg" alt="photo 4" width="1170" height="310" /></a></div>
 					<div class="data">
-						<h4><a href="#">古风</a></h4>
-						<p>高端中式</p>
+						<h4><a href="#">易子而教</a></h4>
+						<p>交给我们，带给您无限的自豪与骄傲</p>
 					</div>
 				</div>
 				
@@ -372,7 +372,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <div class="d_right">
        
         <div class="r_top">
-        <div style="width:100%;text-align:center;font-size:20px;"><font color=green>最新认证家教</font></div>
+        <div style="width:100%;text-align:center;font-size:20px;"><font color=green><img alt="易教Logo" src="images/logo.png" width="25px" height="30px">最新认证家教</font></div>
         
         </div>
         <% 
@@ -417,7 +417,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         
  <!---------------平台流程start---------------------->
 	<div class="platform">
-            <h3>平台流程</h3>
+            <h3><img alt="易教Logo" src="images/logo.png" width="25px" height="30px">易教平台流程</h3>
            <!--  <p class="line"></p> -->
             <ul class="icon">
             	<li class="one"></li>
@@ -450,7 +450,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		
 		 <!-- 四大保障开始 -->
         <div class="security">
-            <h3>四大保障</h3>
+            <h3><img alt="易教Logo" src="images/logo.png" width="25px" height="30px">易教四大保障</h3>
         	<ul class="icon-security">
         		<li class="one"></li>
         		<li class="two"></li>
@@ -477,7 +477,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         	</ul>
         </div><!-- 四大保障结束 -->
 		
-		
+		<div style="margin-left:450px;"><img alt="易教Logo" src="images/logo.png"></div>
        
 
     
@@ -490,7 +490,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<ul class="bottom-left">
     		<li>
     			<ul>
-    				<li class="titles">好好学习网</li>
+    				<li class="titles">易教家教网</li>
     				<li><a href="#"></a></li>
     				<li><a href="#"></a></li>
     				<li><a href="#"></a></li>
@@ -527,7 +527,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		<li>周一至周日 9:00-23:00</li>
     		<li>（仅收市话费）</li>
     	</ul>
-    	<p>Copyright ©2014-2016 好好学习网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
+    	<p>Copyright ©2014-2016 易教家教网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
     </div><!-- 底部结束 -->
   
 	<script type="text/javascript" src="js/semantic.min.js"></script>

@@ -123,13 +123,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <span>课时费:</span>
           
             <div class="ui input">
-              <input type="text" id="money" placeholder="标准符合好好学习平台"/>&nbsp;元/小时
+              <input type="text" id="money" placeholder="标准符合易教网平台"/>&nbsp;元/小时
             </div>
             <input type="button" value="确认提交" class="ui green button" style="margin-left:50px" onclick="sub()"/>
         </div>
 
         <div class="subject">
-          <div class="subject_title">好好学习家教平台课时费简介</div>
+          <div class="subject_title">易教网家教平台课时费简介</div>
                 <img src="images/finger.png" height="32px" width="32px"/>&nbsp;&nbsp;小学【语文、数学、英语、奥数】
 　　          <font style="color:#06B1D8;font-size:20px">每小时30-50元（在校大学生）</font><br/>
                  <img src="images/finger.png" height="32px" width="32px"/>&nbsp;&nbsp;初中【语文、数学、英语、物理、化学、奥数】       

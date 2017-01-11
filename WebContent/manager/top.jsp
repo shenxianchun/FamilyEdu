@@ -42,7 +42,7 @@
 			<a href="TpageAction?pageNow=1"><button class="ui button">教员信息管理</button></a>
 			<a href="StudentpageAction?pageNow=1"><button class="ui button">学员需求管理</button></a>
 			<a href="OrderAction?pageNow=1"><button class="ui button">订单管理</button></a>
-			<a href=""><button class="ui button">留言管理</button></a>
+			<a href="FeedbackAction?pageNow=1"><button class="ui button">留言管理</button></a>
 		</div>
 	</div>
 	<%}else{%>

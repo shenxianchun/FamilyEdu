@@ -9,6 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
   	<base href="<%=basePath%>">
     <title>全部家教</title>
+    <link rel="short icon" href="images/logo.png" />
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -53,12 +54,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <%} %>
 <!--nav-->
 <div id="nav">
-    <a href="index.jsp" onclick="dh(this)">网站首页</a>
-    <a href="StudentpageAction?pageNow=1">家教信息库</a>
-    <a href="TpageAction?pageNow=1">教员简历</a>
-    <a href="javascript:;">平台介绍</a>
-    <a href="javascript:;">在线学习</a>
-    <a href="javascript:;">学习资源</a>
+    <a href="index.jsp" onclick="dh(this)">易教首页</a>
+    <a href="StudentpageAction?pageNow=1">学员需求</a>
+    <a href="TpageAction?pageNow=1">找教员</a>
+    <a href="javascript:;" onclick="dh(this)">平台介绍</a>
+    <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
+    <a href="javascript:;" onclick="dh(this)">关于我们</a>
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
 	<div class="search" style="width:87%;height:60px;margin:-13px auto 13px auto;">
@@ -221,11 +222,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   if(request.getAttribute("pageNow")!=null){
   %>
    <!-- 底部开始 -->
-    <div class="bottom">
+    <div class="bottom" style="margin-top:200px;">
     	<ul class="bottom-left">
     		<li>
     			<ul>
-    				<li class="titles">好好学习网</li>
+    				<li class="titles">易教家教网</li>
     				<li><a href="#"></a></li>
     				<li><a href="#"></a></li>
     				<li><a href="#"></a></li>
@@ -262,13 +263,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		<li>周一至周日 9:00-23:00</li>
     		<li>（仅收市话费）</li>
     	</ul>
-    	<p>Copyright ©2014-2016 好好学习网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
+    	<p>Copyright ©2014-2016易教家教网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
     </div><!-- 底部结束 -->
   	<%} %>
   
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/semantic.min.js"></script>
 	<script type="text/javascript" src="js/SearchTeacher.js"></script>
+	<%if(role!=null){%>
 	<script type="text/javascript">
 	function order(){
 		if(<%=session.getAttribute("role").equals("教员")%>){
@@ -280,5 +282,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
 	
 	</script>
+	<%} %>
 </body>
 </html>
