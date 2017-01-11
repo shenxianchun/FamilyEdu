@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,com.soft.Bean.*" pageEncoding="utf-8"%>
+<%@ page language="java" import="java.util.*,com.article.web.*" pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -129,7 +129,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		}
  	</style>
 </head>
-<body onscroll="return window_onscroll()">
+<body>
     <% 
     String name=(String)session.getAttribute("name");
     String role=(String)session.getAttribute("role");
@@ -162,7 +162,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <a href="StudentpageAction?pageNow=1">学员需求</a>
     <a href="TpageAction?pageNow=1">找教员</a>
     <a href="javascript:;" onclick="dh(this)">平台介绍</a>
-    <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
+    <a href="FeedbackAction" onclick="dh(this)">美文欣赏</a>
     <a href="javascript:;" onclick="dh(this)">关于我们</a>
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
@@ -177,6 +177,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="sanwen">以下文章均来自<a href="http://www.sanwen.net/" target="_blank">中国散文网
 	<!-- <img src="http://i0.sanwen.net/images/xlogo.png" alt="返回中国散文网首页"> -->
 		</a>
+	</div>
+	<div>
+		
+	
 	</div>
 	<span style="display:inline-block;background:#FFE1FF;font-size:15px;vertical-align:middle;">
 		<font style="color:#919191;font-weight:bold">文章分类 《《《 </font>

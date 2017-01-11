@@ -202,6 +202,13 @@
       		<result name="success">/manager/feedback.jsp</result>
 		</action>
 		<!-- 反馈  end -->
+		
+		<!-- 文章列表 start -->
+		<action name="ArticleAction" class="com.article.web.ArticleAction">
+      		<result name="success">/article/article_list.jsp</result>
+		</action>
+		<!-- 文章列表   end -->
+		
 	</package>
 	
 	
