@@ -103,6 +103,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		  	line-height:60px;
 		  }
 		  .fenlei  li a{
+		  	font-size:22px;
 		  	color:#00BEB7;
 		  }
 		  .fenlei  li a:hover{
@@ -113,7 +114,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		   text-decoration:underline;
 		   color:red;
 		   }
-		
+		.box1 .sanwen{
+			color:#00BEB7;
+			margin-left:40%;
+			font-size:24px;
+		}
+		.box1 .sanwen a{
+			color:red;
+			font-size:24px;
+		}
+		.box1 .sanwen a:hover{
+		text-decoration:underline;
+		color:red;
+		}
  	</style>
 </head>
 <body onscroll="return window_onscroll()">
@@ -157,9 +170,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     
   <div style="border-style:solid;border-width:0px;border-color:#000; width:70%;" class="artcle">
+	
 	<!--分类-->
-	<a name="分类">
+
 	<div class="box1" style="height:800px">
+	<div class="sanwen">以下文章均来自<a href="http://www.sanwen.net/" target="_blank">中国散文网
+	<!-- <img src="http://i0.sanwen.net/images/xlogo.png" alt="返回中国散文网首页"> -->
+		</a>
+	</div>
 	<span style="display:inline-block;background:#FFE1FF;font-size:15px;vertical-align:middle;">
 		<font style="color:#919191;font-weight:bold">文章分类 《《《 </font>
 	</span></br></br></br>
@@ -256,7 +274,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--over-->
 	</div>
 	</div>
-	</a>
 </div>
   
   

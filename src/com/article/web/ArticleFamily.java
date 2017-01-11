@@ -29,7 +29,7 @@ public class ArticleFamily {
 		ArrayList list=al.getContentList(urls.get("sanwen"));
 		for(int i=0;i<list.size();i++){
 			ArticleBean bean=(ArticleBean)list.get(i);
-			System.out.println(bean.getTitle()+"------"+bean.getAuthor()+"========="+bean.getContent());
+			System.out.println("标题："+bean.getTitle()+"---------\n"+bean.getAuthor()+"=========\n"+bean.getContent());
 		}
 		System.out.println(list.toString());
 	}
@@ -39,6 +39,8 @@ public class ArticleFamily {
 		Document document;
 		try {
 			document = Jsoup.connect(url).get();
+			//System.out.println(document.html());
+			System.out.println("连接："+url+"==============================");
 			Elements divs = document.select("div.article");
 			Elements con=document.getElementsByTag("h1");
 			Elements author=document.getElementsByClass("info");
