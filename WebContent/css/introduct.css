@@ -1,0 +1,135 @@
+/*中间内容*/
+div.center-content>ul{
+	  width:1366px;
+	  background-color:#00BEB7;
+	  margin-top:10px;
+}
+div.center-content>ul li{
+     list-style: none;
+     display:inline-block;
+     margin-left:20px;
+}
+div.center-content>ul li:first-child{
+	margin-left:70px;
+	width:260px;
+	box-shadow:0px 0px 2px 1px #8B8686;
+	text-align:center;
+}
+div.center-content>ul li a{
+	text-decoration:none;
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#fff;
+	display: inline-block;
+	width:120px;
+	height:55px;
+	line-height:57px;
+	text-align:center;
+}
+div.center-content>ul li.introduct a{
+	background-color:#00B4AE;
+}
+div.center-content>ul li:first-child a:hover{
+	background-color:#00BEB7;
+}
+div.center-content>ul li a:hover{
+	background-color:#00B4AE;
+}
+.banner{
+	height:440px;
+	background:url("../user/images/introduct_big.png") no-repeat;
+	background-size:100%;
+}
+.center-content ul li{
+	background-color: #00BEB7;
+}
+.feature{
+}
+.border{
+	border:1px solid blue;
+}
+h1{
+	margin:40px auto;
+	width:200px;
+	height:60px;
+}
+.feature h1{
+	background:url("../user/images/feature.png");
+}
+.feature .content{
+	width:1235px;
+	height:640px;
+	margin:0 auto;
+}
+.feature .content ul li{
+	width:298px;
+	height:220px;
+	list-style:none;
+	float:left;
+	text-align:center;
+	padding-top:68px;
+	border-left:1px solid #DCDCDC;
+}
+.feature .content ul li .img2{
+	display:none;
+}
+.feature .content ul li:hover{
+	background:#00B4AE;
+}
+.feature .content ul li.bb{
+	border-bottom:1px solid #DCDCDC;
+}
+.feature .content ul li.nL{
+	border-left:none;
+}
+.feature .content ul li span{
+	display:block;
+	color:#646464;
+	padding-top:20px;
+	font-size:22px;
+}
+
+/* 平台流程开始 */
+.process{
+	background:#F1F1F1;
+	padding-top:20px;
+}
+.process .content{
+	width:822px;
+	height:1169px;
+	margin:0 auto;
+	background-image:url("../user/images/s17.png");
+}
+.process  h1{
+	background:url("../user/images/s18.png");	
+}
+/* 平台流程结束 */
+
+/* 上课方式开始 */
+.lesson{
+	height:500px;
+}
+.lesson .Lcontent{
+	width:1040px;
+	height:268px;
+	padding-top:60px;
+	margin:0 auto;
+}
+.lesson h1{
+	background:url("../user/images/s19.png");
+}
+.lesson .Lcontent ul li{
+	list-style:none;
+	float:left;
+	margin-right:197px;
+	width:202px;
+	height:300px;
+	/* border:1px solid blue; */
+}
+ .lesson .Lcontent ul li span{
+	display:block;
+	color:#646464;
+	padding-top:20px;
+	font-size:22px;
+}
+/* 上课方式结束 */

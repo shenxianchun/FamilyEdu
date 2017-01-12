@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 	<base href="<%=basePath%>">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>学员需求</title>
+	<title>美文类型</title>
 	<link rel="short icon" href="images/logo.png" />
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -19,40 +19,40 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script language="javascript">
 		function change(a,event){
 			event.style.backgroundColor="#FFE1FF";
-			var q=document.getElementById('qingchun');
-			var x=document.getElementById('xuanhuan');
-			var g=document.getElementById('gongting');
-			var z=document.getElementById('zhichang');
-			var t=document.getElementById('zhentan');
-			if(a=="qingchun"){
+			var q=document.getElementById('suibi');
+			var x=document.getElementById('shige');
+			var g=document.getElementById('sanwen');
+			var z=document.getElementById('zawen');
+			var t=document.getElementById('novel');
+			if(a=="suibi"){
 				q.style.display="block";
 				x.style.display="none";
 				 g.style.display="none";
 				z.style.display="none";
 				 t.style.display="none";
 			}
-			else if(a=="xuanhuan"){
+			else if(a=="shige"){
 				q.style.display="none";
 				x.style.display="block";
 				 g.style.display="none";
 				z.style.display="none";
 				 t.style.display="none";
 			}
-		   else if(a=="gongting"){
+		   else if(a=="sanwen"){
 				q.style.display="none";
 				x.style.display="none";
 				 g.style.display="block";
 				z.style.display="none";
 				 t.style.display="none";
 			}
-		   else if(a=="zhichang"){
+		   else if(a=="zawen"){
 				q.style.display="none";
 				x.style.display="none";
 				 g.style.display="none";
 				z.style.display="block";
 				 t.style.display="none";
 			}
-		else if(a=="zhentan"){
+		else if(a=="novel"){
 				q.style.display="none";
 				x.style.display="none";
 				 g.style.display="none";
@@ -99,7 +99,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			width:800px;
 			height:60px;
 			background:#fbfbfb;
-			border-bottom:1px solid #eeeded;
+			border-bottom:1px dashed #eeeded;
 		  	line-height:60px;
 		  }
 		  .fenlei  li a{
@@ -161,14 +161,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <a href="index.jsp" onclick="dh(this)">易教首页</a>
     <a href="StudentpageAction?pageNow=1">学员需求</a>
     <a href="TpageAction?pageNow=1">找教员</a>
-    <a href="javascript:;" onclick="dh(this)">平台介绍</a>
-    <a href="FeedbackAction" onclick="dh(this)">美文欣赏</a>
+    <a href="user/introduct.jsp" onclick="dh(this)">平台介绍</a>
+    <a href="ArticleAction" onclick="dh(this)">美文欣赏</a>
     <a href="javascript:;" onclick="dh(this)">关于我们</a>
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
-    
-    
-    
+
+
   <div style="border-style:solid;border-width:0px;border-color:#000; width:70%;" class="artcle">
 	
 	<!--分类-->
@@ -178,10 +177,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!-- <img src="http://i0.sanwen.net/images/xlogo.png" alt="返回中国散文网首页"> -->
 		</a>
 	</div>
-	<div>
-		
-	
-	</div>
 	<span style="display:inline-block;background:#FFE1FF;font-size:15px;vertical-align:middle;">
 		<font style="color:#919191;font-weight:bold">文章分类 《《《 </font>
 	</span></br></br></br>
@@ -189,157 +184,111 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	   <!--分类导航-->
 		<div style="width:4%;height:100%;"class="dec">
 			<ul>
-				<li onMouseOver="change('qingchun',this)" onMouseOut="change1(this)" id="xy"><a href="#分类" style="color:#919191">散文</a></li>
-				<li onMouseOver="change('xuanhuan',this)" onMouseOut="change1(this)" id="xh"><a href="#分类"style="color:#919191">诗歌</a></li>
-				<li onMouseOver="change('gongting',this)" onMouseOut="change1(this)" id="gt"><a href="##分类"style="color:#919191">杂文</a></li>
-				<li onMouseOver="change('zhichang',this)" onMouseOut="change1(this)" id="zc"><a href="##分类"style="color:#919191">小小说</a></li>
-				<li onMouseOver="change('zhentan',this)" onMouseOut="change1(this)" id="zt"><a href="##分类"style="color:#919191">随笔</a></li>
+				<li onMouseOver="change('suibi',this)" onMouseOut="change1(this)" id="xy"><a href="#分类" style="color:#919191">随笔</a></li>
+				<li onMouseOver="change('shige',this)" onMouseOut="change1(this)" id="xh"><a href="#分类"style="color:#919191">诗歌</a></li>
+				<li onMouseOver="change('sanwen',this)" onMouseOut="change1(this)" id="gt"><a href="##分类"style="color:#919191">散文</a></li>
+				<li onMouseOver="change('zawen',this)" onMouseOut="change1(this)" id="zc"><a href="##分类"style="color:#919191">杂文</a></li>
+				<li onMouseOver="change('novel',this)" onMouseOut="change1(this)" id="zt"><a href="##分类"style="color:#919191">小小说</a></li>
 			</ul>
 		</div> <!--分类导航over-->
 		<!--Order-->
-		<div style="width:96%;height:95%;float:left;" id="qingchun">
-			<div class="fenlei"><font size=4 style="color:#919191"></br>散文</font></br>
-				 <ol>
-				  <li><a href="#"><font style="color:red">1.&nbsp;&nbsp;</font>夏至未至</a></li>
-				  <li><a href="#"><font style="color:red">2.&nbsp;&nbsp;</font>回不去的青春</a></li>
-				  <li><a href="#"><font style="color:red">3.&nbsp;&nbsp;</font>小时代</a></li>
-				  <li><a href="#">4.&nbsp;&nbsp;盛夏流年朝朝</a></li>
-				  <li><a href="#">5.&nbsp;&nbsp;致我们终将逝去的青春</a></li>
-				  <li><a href="#">6.&nbsp;&nbsp;原来</a></li>
-				  <li><a href="#">7.&nbsp;&nbsp;天亮说晚安</a></li>
-				  <li><a href="#">8.&nbsp;&nbsp;曾有人爱我如生命</a></li>
-				  <li><a href="#">7.&nbsp;&nbsp;天亮说晚安</a></li>
-				  <li><a href="#">8.&nbsp;&nbsp;曾有人爱我如生命</a></li>
+		<% Map<String,Map<String,String>> Typearticle=(Map<String,Map<String,String>>)request.getAttribute("Typearticle");
+		Set<String> set = Typearticle.keySet();
+        Iterator<String> it  = set.iterator();
+        String type="";
+        int i=0,j=0;
+        while(it.hasNext()){
+        	i++;
+        	String a_listkey=it.next();
+        	if("suibi".equals(a_listkey)){
+        		type="随笔";
+        	}else if("shige".equals(a_listkey)){
+        		type="诗歌";
+        	}else if("sanwen".equals(a_listkey)){
+        		type="散文";
+        	}else if("zawen".equals(a_listkey)){
+        		type="杂文";
+        	}else{
+        		type="小小说";
+        	}
+        %>
+      <%--  <div style="color:red;font-size:24px;">
+       	类型：<%=a_listkey %>
+       </div>  --%>
+       <%if(i==1){%>
+       <div style="width:96%;height:95%;float:left;" id="<%=a_listkey.toString().trim()%>"> 
+       <%}else{%>
+        <div style="width:96%;height:95%;float:left;display:none;" id="<%=a_listkey.toString().trim()%>">
+        <%} %>
+        
+			<div class="fenlei"><font size=4 style="color:#919191;"></br><%=type%></font></br>
+        		<ol>
+        	<%
+        	Map<String,String> article=Typearticle.get(a_listkey);
+        	Set<String> sett = article.keySet();
+            Iterator<String> itt  = sett.iterator();
+            while(itt.hasNext()){
+            	j++;
+            	String a_key=itt.next().toString().trim();
+            	String a_value=article.get(a_key);
+            %>
+				  <li><a href="ArticleAction!read?urlkey=<%=a_key %>" target="_blank"><%=j %>.&nbsp;&nbsp;<%=a_value %></a></li>
+				  <%} j=0;%>
 				</ol>
 			</div>
-			
 		</div>
 		<!--over-->
-		<div style="width:96%;height:95%;float:left;display:none" id="xuanhuan">
-			<div class="fenlei"></br><font size=4 style="color:#919191">诗歌</font></br>
-				 <ol>
-				  <li><a href="#"><font style="color:red">1.&nbsp;&nbsp;</font>幻城</a></li>
-				  <li><a href="#"><font style="color:red">2.&nbsp;&nbsp;</font>爵迹</a></li>
-				  <li><a href="#"><font style="color:red">3.&nbsp;&nbsp;</font>临界</a></li>
-				  <li><a href="#">4.&nbsp;&nbsp;烈火如歌</a></li>
-				  <li><a href="#">5.&nbsp;&nbsp;花千骨</a></li>
-				  <li><a href="#">6.&nbsp;&nbsp;曾许诺</a></li>
-				  <li><a href="#">7.&nbsp;&nbsp;大漠谣</a></li>
-				  <li><a href="#">8.&nbsp;&nbsp;长相思</a></li>
-				</ol>
-			</div>
-		</div>
-		<!--over-->
-		<div style="width:96%;height:95%;float:left;display:none" id="gongting">
-			<div class="fenlei"></br><font size=4 style="color:#919191">杂文</font></br>
-				 <ol>
-				  <li><a href="#"><font style="color:red">1.&nbsp;&nbsp;</font>红颜乱</a></li>
-				  <li><a href="#"><font style="color:red">2.&nbsp;&nbsp;</font>步步惊心</a></li>
-				  <li><a href="#"><font style="color:red">3.&nbsp;&nbsp;</font>宫</a></li>
-				  <li><a href="#">4.&nbsp;&nbsp;甄嬛传</a></li>
-				  <li><a href="#">5.&nbsp;&nbsp;绝世舞妃</a></li>
-				  <li><a href="#">6.&nbsp;&nbsp;兰陵王</a></li>
-				  <li><a href="#">7.&nbsp;&nbsp;凰图腾</a></li>
-				  <li><a href="#">8.&nbsp;&nbsp;神话</a></li>
-				</ol>
-			</div>
-		</div>
-		<!--over-->
-		<div style="width:96%;height:95%;float:left;display:none" id="zhichang">
-			<div class="fenlei"></br><font size=4 style="color:#919191">小小说</font></br>
-			 <ol>
-			  <li><a href="#"><font style="color:red">1.&nbsp;&nbsp;</font>天价隐妻</a></li>
-			  <li><a href="#"><font style="color:red">2.&nbsp;&nbsp;</font>护花使者</a></li>
-			  <li><a href="#"><font style="color:red">3.&nbsp;&nbsp;</font>姗姗来吃</a></li>
-			  <li><a href="#">4.&nbsp;&nbsp;夏有乔木，雅望天堂</a></li>
-			  <li><a href="#">5.&nbsp;&nbsp;致我们终将逝去的青春</a></li>
-			  <li><a href="#">6.&nbsp;&nbsp;原来</a></li>
-			  <li><a href="#">7.&nbsp;&nbsp;天亮说晚安</a></li>
-			  <li><a href="#">8.&nbsp;&nbsp;会有天使替我爱你</a></li>
-			  
-			</ol>
-			</div>
-		</div>
-		<!--over-->
-		<div style="width:96%;height:95%;float:left;display:none" id="zhentan">
-			<div class="fenlei"></br><font size=4 style="color:#919191">随笔</font></br>
-			 <ol>
-			  <li><a href="#"><font style="color:red">1.&nbsp;&nbsp;</font>盗墓笔记</a></li>
-			  <li><a href="#"><font style="color:red">2.&nbsp;&nbsp;</font>名侦探柯南</a></li>
-			  <li><a href="#"><font style="color:red">3.&nbsp;&nbsp;</font>福尔摩斯</a></li>
-			  <li><a href="#">4.&nbsp;&nbsp;雪舞倾城</a></li>
-			  <li><a href="#">5.&nbsp;&nbsp;致我们终将逝去的青春</a></li>
-			  <li><a href="#">6.&nbsp;&nbsp;原来</a></li>
-			  <li><a href="#">7.&nbsp;&nbsp;薰衣草</a></li>
-			  <li><a href="#">8.&nbsp;&nbsp;曾有人爱我如生命</a></li>
-			</ol>
-			</div>
-		</div>
-	<!--over-->
+		<%
+        }
+		%>
 	</div>
 	</div>
 </div>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+ 
    <!-- 底部开始 -->
     <div class="bottom" style="margin-top:100px;">
-    	<ul class="bottom-left">
-    		<li>
-    			<ul>
-    				<li class="titles">好好学习网</li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    			</ul>
-    		</li>
-    		<li>
-    			<ul>
-    				<li class="titles">帮助中心</li>
-    				<li><a href="#">意见反馈</a></li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    			</ul>
-    		</li>
-    		<li>
-    			<ul>
-    				<li class="titles">平台特色</li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    			</ul>
-    		</li>
-    		<li>
-    			<ul>
-    				<li class="titles">关注我们</li>
-    				<li><a href="#">官方微信</a></li>
-    				<li><a href="#">新浪微博</a></li>
-    				<li><a href="#">腾讯微博</a></li>
-    			</ul>
-    		</li>
-    	</ul>
-    	<ul class="bottom-right">
-    		<li class="phone"></li>
-    		<li class="code">4008-310-100</li>
-    		<li>周一至周日 9:00-23:00</li>
-    		<li>（仅收市话费）</li>
-    	</ul>
-    	<p>Copyright ©2014-2016 好好学习网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
+      <ul class="bottom-left">
+        <li>
+          <ul>
+            <li class="titles">关于易教</li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">友情链接</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li class="titles">帮助中心</li>
+            <li><a href="#">意见反馈</a></li>
+            <li><a href="#">投诉中心</a></li>
+            <li><a href="#">服务说明</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li class="titles">平台特色</li>
+            <li><a href="#">安全可靠</a></li>
+            <li><a href="#">四大保障</a></li>
+            <li><a href="#">四大优势</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li class="titles">关注我们</li>
+            <li><a href="#">官方微信</a></li>
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">腾讯微博</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="bottom-right">
+        <li class="phone"></li>
+        <li class="code">4008-310-100</li>
+        <li>周一至周日 9:00-23:00</li>
+        <li>（仅收市话费）</li>
+      </ul>
+      <p>Copyright ©2017-2018 民大易教网版权所有 - <a href="http://www.miitbeian.gov.cn/" target="blank_">辽ICP备16019394号</a></p>
     </div><!-- 底部结束 -->
   	
 </body>

@@ -16,59 +16,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
 	<link rel="stylesheet" type="text/css" href="css/styleindex.css">
- 	<style type="text/css">
- 		html,body,div{margin:0 auto;padding:0;}
- 		.artclelist .box1{
-			padding-top: 25px;
-			margin: 25px 4px auto;
-			width: 100%;
-			border-style: solid;
-			border-width: 1px;
-			border-color: #D5E6B9;
-			padding:0px 0px 0px 0px;
-		}
-		h1{
-			width:60%;
-			height:50px;
-			/* background:#ECEFEE; */
-			text-align:center;
-			line-height:50px;
-			font-size:24px;
-			margin:-35px 0px 0px 17%;
-		}
-		.article p{
-			margin-bottom:1.5em;
-			text-indent:2em;
-			font-size:15px;
-			font-family:"微软雅黑";
-			color:#444;
-			
-		}
-		.article{
-			width:98%;
-		}
-		.info{
-			margin-left:37%;
-			color:#313131;
-		}
-		.info a{
-			text-decoration:none;
-		}
-		.info a:hover{
-			text-decoration:underline;
-			color:blue;
-		}
-		.box1 .sanwen{
-			color:#00BEB7;
-			margin-left:2%;
-			font-size:16px;
-		}
-		.box1 .sanwen a{
-			color:red;
-			font-size:16px;
-		}
-		
- 	</style>
+	<link rel="stylesheet" type="text/css" href="css/introduct.css">
+ 	<link rel="stylesheet" type="text/css" href="css/introduct.css">
+ 	<script type="text/javascript" src="js/introduct.js"></script>
 </head>
 <body>
     <% 
@@ -108,31 +58,83 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
     
-    
-    
-  <div style="border-style:solid;border-width:0px;border-color:#000; width:70%;" class="artclelist">
-	<!--分类-->
-	
-	<%
-	ArticleBean article=(ArticleBean)request.getAttribute("article");
-	
-	%>
-		<div class="box1">
-			<a href="<%=article.getArticleUrl().replaceAll("http://m", "http://www") %>" style="text-decoration:none;" target="blank_"><span style="display:inline-block;background:#FFE1FF;font-size:15px;vertical-align:middle;">
-				<font style="color:#919191;font-weight:bold">点击阅读原文》》》</font>
-			</span></a></br></br></br>
-			<div class="sanwen">文章来自
-				<a href="http://www.sanwen.net/" target="_blank">
-				中国散文网
-				</a>
-			</div>
-			<%=article.getContent() %>
+    <div class="feature">
+		<h1></h1>
+		<div class="content">
+			<ul>
+				<li class="bb nL">
+					<img class="img1" src="user/images/s1.png" alt="" />
+					<img class="img2" src="user/images/s2.png" alt="" />
+					<span>家长更省 老师更赚</span>
+				</li>
+				<li class="bb">
+					<img class="img1" src="user/images/s3.png" alt="" />
+					<img class="img2" src="user/images/s4.png" alt="" />
+					<span>双向评价 信用积累</span>
+				</li>
+				<li class="bb">
+					<img class="img1" src="user/images/s5.png" alt="" />
+					<img class="img2" src="user/images/s6.png" alt="" />
+					<span>手机应用 随时随地</span>
+				</li>
+				<li class="bb">
+					<img class="img1" src="user/images/s7.png" alt="" />
+					<img class="img2" src="user/images/s8.png" alt="" />
+					<span>附近名师 一搜即得</span>
+				</li>
+				<li class="nL">
+					<img class="img1" src="user/images/s9.png" alt="" />
+					<img class="img2" src="user/images/s10.png" alt="" />
+					<span>实名认证 师资保证</span>
+				</li>
+				<li>
+					<img class="img1" src="user/images/s11.png" alt="" />
+					<img class="img2" src="user/images/s12.png" alt="" />
+					<span>学费托管 支付安全</span>
+				</li>
+				<li>
+					<img class="img1" src="user/images/s13.png" alt="" />
+					<img class="img2" src="user/images/s14.png" alt="" />
+					<span>技术领先 资料保密</span>
+				</li>
+				<li>
+					<img class="img1" src="user/images/s15.png" alt="" />
+					<img class="img2" src="user/images/s16.png" alt="" />
+					<span>精英团队 专业服务</span>
+				</li>
+			</ul>
 		</div>
-</div>
-  
-  
-  <!-- 底部开始 -->
-    <div class="bottom" style="margin-top:100px;">
+	</div>
+    <!-- 平台流程开始 -->
+	<div class="process">
+		<h1 ></h1>
+		<div class="content">
+		</div>
+	</div>
+	<!-- 平台流程结束 -->
+  <!-- 上课方式开始 -->
+	<div class="lesson">
+		<h1></h1>
+		<div class="Lcontent">
+			<ul>
+				<li>
+					<img class="img2" src="user/images/s20.png" alt="" />
+					<span>家长更省 老师更赚</span>
+				</li>
+				<li>
+					<img class="img2" src="user/images/s21.png" alt="" />
+					<span>家长更省 老师更赚</span>
+				</li>
+				<li style="margin-right:0px;">
+					<img class="img2" src="user/images/s22.png" alt="" />
+					<span>家长更省 老师更赚</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 上课方式结束 -->
+  	<!-- 底部开始 -->
+    <div class="bottom" style="margin-top:0px;">
       <ul class="bottom-left">
         <li>
           <ul>
@@ -175,6 +177,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       </ul>
       <p>Copyright ©2017-2018 民大易教网版权所有 - <a href="http://www.miitbeian.gov.cn/" target="blank_">辽ICP备16019394号</a></p>
     </div><!-- 底部结束 -->
+  
+  
   	
 </body>
 </html>

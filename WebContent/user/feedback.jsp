@@ -51,8 +51,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <a href="index.jsp" onclick="dh(this)">易教首页</a>
     <a href="StudentpageAction?pageNow=1">学员需求</a>
     <a href="TpageAction?pageNow=1">找教员</a>
-    <a href="javascript:;" onclick="dh(this)">平台介绍</a>
-    <a href="javascript:;" onclick="dh(this)">美文欣赏</a>
+    <a href="user/introduct.jsp" onclick="dh(this)">平台介绍</a>
+    <a href="ArticleAction" onclick="dh(this)">美文欣赏</a>
     <a href="javascript:;" onclick="dh(this)">关于我们</a>
     <a href="FeedbackAction?pageNow=1">反馈</a>
 </div>
@@ -132,48 +132,48 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div id="gotop" style="width: 60px; height: 51px;"></div>
   
    <!-- 底部开始 -->
-    <div class="bottom" style="margin-top:440px;">
-    	<ul class="bottom-left">
-    		<li>
-    			<ul>
-    				<li class="titles">易教家教网</li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    			</ul>
-    		</li>
-    		<li>
-    			<ul>
-    				<li class="titles">帮助中心</li>
-    				<li><a href="#">意见反馈</a></li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    			</ul>
-    		</li>
-    		<li>
-    			<ul>
-    				<li class="titles">平台特色</li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    				<li><a href="#"></a></li>
-    			</ul>
-    		</li>
-    		<li>
-    			<ul>
-    				<li class="titles">关注我们</li>
-    				<li><a href="#">官方微信</a></li>
-    				<li><a href="#">新浪微博</a></li>
-    				<li><a href="#">腾讯微博</a></li>
-    			</ul>
-    		</li>
-    	</ul>
-    	<ul class="bottom-right">
-    		<li class="phone"></li>
-    		<li class="code">4008-310-100</li>
-    		<li>周一至周日 9:00-23:00</li>
-    		<li>（仅收市话费）</li>
-    	</ul>
-    	<p>Copyright ©2014-2016  易教家教网版权所有 - 闽ICP备14021129号-1 闽公网安备35020002830833号</p>
+    <div class="bottom" style="margin-top:400px;">
+      <ul class="bottom-left">
+        <li>
+          <ul>
+            <li class="titles">关于易教</li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">友情链接</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li class="titles">帮助中心</li>
+            <li><a href="#">意见反馈</a></li>
+            <li><a href="#">投诉中心</a></li>
+            <li><a href="#">服务说明</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li class="titles">平台特色</li>
+            <li><a href="#">安全可靠</a></li>
+            <li><a href="#">四大保障</a></li>
+            <li><a href="#">四大优势</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li class="titles">关注我们</li>
+            <li><a href="#">官方微信</a></li>
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">腾讯微博</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="bottom-right">
+        <li class="phone"></li>
+        <li class="code">4008-310-100</li>
+        <li>周一至周日 9:00-23:00</li>
+        <li>（仅收市话费）</li>
+      </ul>
+      <p>Copyright ©2017-2018 民大易教网版权所有 - <a href="http://www.miitbeian.gov.cn/" target="blank_">辽ICP备16019394号</a></p>
     </div><!-- 底部结束 -->
   
   

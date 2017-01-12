@@ -21,12 +21,12 @@ public class ArticleFamily {
 //	private static Map<String,List<ArticleBean>> urllist=new HashMap<String,List<ArticleBean>>();
 	private static ArticleFamily al=new ArticleFamily();
 	static{
-		urls.put("sanwen", "http://www.sanwen.net/sanwen/");//散文
+		urls.put("suibi", "http://www.sanwen.net/suibi/");//随笔
 		urls.put("shige", "http://www.sanwen.net/shige/");//诗歌
 		urls.put("zawen", "http://www.sanwen.net/zawen/");//杂文
 		urls.put("novel", "http://www.sanwen.net/novel/");//小小说
 //		urls.put("rizhi", "http://www.sanwen.net/rizhi/");//日记
-		urls.put("suibi", "http://www.sanwen.net/suibi/");//随笔
+		urls.put("sanwen", "http://www.sanwen.net/sanwen/");//散文
 	}
 	
 	//得到文章类型以及类型包含的10篇文章及其的相关标题
@@ -61,14 +61,8 @@ public class ArticleFamily {
 			document = Jsoup.connect(url).get();
 			//System.out.println(document.html());
 			Elements divs = document.select("div.article");
-			Elements con=document.getElementsByTag("h1");
-			Elements author=document.getElementsByClass("info");
 			String content=divs.outerHtml();
-			String title=con.text();
-			String au=author.text();
 			bean.setArticleUrl(url);
-			bean.setAuthor(au);
-			bean.setTitle(title);
 			bean.setContent(content);
 		}
 		catch (IOException e) {
