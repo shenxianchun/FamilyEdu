@@ -73,12 +73,17 @@
 	     var password=$("input[name=password]").val();
 	     var spassword=$("input[name=spassword]").val();
 	    
-	    alert(usertell);
+	    //alert(usertell);
 	     if(usertell==""){
 	       alert("请输入手机号!");
 	       return;
 	     }
-	     
+	     var eTel = new RegExp("^[0-9]{7,11}$");
+			var rsTel=eTel.test(usertell);
+			if(rsTel==false){
+				alert("手机号填写错误，正确格式为7-11位数字");
+				return;
+			}
 	     if(password==""){
 	    	 alert("请输入密码!");
 		     return;
